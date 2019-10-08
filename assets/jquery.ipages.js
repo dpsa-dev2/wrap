@@ -1589,7 +1589,7 @@
 		
 		onSwipeUp: function(e) {
 			if(this.swipe.startTouch) {
-				this.swipe.startTouch = false;
+				this.swipe.startTouch = true; //tweaking swipe up
 				
 				var len = this.root.controls.$bookWrap.width()/2 + this.root.pageWidth/2,
 				offset = len * this.swipe.offset/50,
@@ -1695,7 +1695,7 @@
 			bookTheme: 'default', // Sets the book theme, you can create your own (see ipages.css file, the theme section)
 			
 			pageWidth: 600, // Sets the book page width in px
-			pageHeight: 620, // Sets the book page height in px
+			pageHeight: 820, // Sets the book page height in px
 			pageStart: 1, // The number of the page to show first, after the book init
 			
 			pdfUrl: null, // Sets the source of the PDF document to display
@@ -2425,7 +2425,7 @@
 			.css({
 				'display': 'none',
 				'width': this.pageWidth + 'px',
-				'height': this.pageHeight + 'px'
+				'height': this.pageHeight + 'px'//from px to percentage
 			})
 			.addClass('ipgs-page')
 			.addClass('ipgs-loading')
