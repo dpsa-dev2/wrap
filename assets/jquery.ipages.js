@@ -1694,8 +1694,8 @@
 			
 			bookTheme: 'default', // Sets the book theme, you can create your own (see ipages.css file, the theme section)
 			
-			pageWidth: 600, // Sets the book page width in px
-			pageHeight: 820, // Sets the book page height in px
+			 pageWidth: 640, // Sets the book page width in px
+			 pageHeight: 910, // Sets the book page height in px
 			pageStart: 1, // The number of the page to show first, after the book init
 			
 			pdfUrl: null, // Sets the source of the PDF document to display
@@ -2424,8 +2424,8 @@
 			$page = $('<div></div>')
 			.css({
 				'display': 'none',
-				'width': this.pageWidth + 'px',
-				'height': this.pageHeight + 'px'//from px to percentage
+				'width': this.pageWidth + '%',
+				'height':  this.pageHeight + '%'//from px to percentage
 			})
 			.addClass('ipgs-page')
 			.addClass('ipgs-loading')
